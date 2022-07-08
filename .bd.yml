@@ -1,7 +1,7 @@
 ---
 
-name: base-template
-type: template
+name: homebrew-ssm2env
+type: application
 team: # Replace this
 tags:
   # key: value
