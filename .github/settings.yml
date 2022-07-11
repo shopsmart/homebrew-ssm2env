@@ -1,8 +1,8 @@
 ---
 repository:
-  name: base-template
-  description: Base template
-  private: true
+  name: homebrew-ssm2env
+  description: Homebrew recipe for installing ssm2env
+  private: false
   has_issues: true
   default_branch: main
   allow_squash_merge: true
