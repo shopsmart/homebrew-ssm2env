@@ -5,20 +5,20 @@
 class Ssm2env < Formula
   desc ""
   homepage ""
-  version "1.1.1-rc.8"
+  version "1.1.1"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/shopsmart/ssm2env/releases/download/v1.1.1-rc.8/ssm2env_1.1.1-rc.8_darwin_arm64.tar.gz"
-      sha256 "1a538b4a101eabf361a63718b87c8002a17c58f16cbbb590408e369a1b1c98e2"
+    if Hardware::CPU.intel?
+      url "https://github.com/shopsmart/ssm2env/releases/download/v1.1.1/ssm2env_1.1.1_darwin_amd64.tar.gz"
+      sha256 "9d25bc06ac5589f9c329be550abb66b19d4ca862ec37471eae7994add9830072"
 
       def install
         bin.install "ssm2env"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/shopsmart/ssm2env/releases/download/v1.1.1-rc.8/ssm2env_1.1.1-rc.8_darwin_amd64.tar.gz"
-      sha256 "b2f1ff3a0ef22b925dd3ab7d7da78707fe3fa0cbfc77c072dd6dae207723da0c"
+    if Hardware::CPU.arm?
+      url "https://github.com/shopsmart/ssm2env/releases/download/v1.1.1/ssm2env_1.1.1_darwin_arm64.tar.gz"
+      sha256 "d21f76ff7e9649fd64bf1ccd9cd7bfa1b4c177f4a4766da48fd692feb02c771c"
 
       def install
         bin.install "ssm2env"
@@ -28,16 +28,16 @@ class Ssm2env < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shopsmart/ssm2env/releases/download/v1.1.1-rc.8/ssm2env_1.1.1-rc.8_linux_arm64.tar.gz"
-      sha256 "1bd02acb9513cdf589bb7d49d4973af3d404fa074e880514e14e06918be48dbe"
+      url "https://github.com/shopsmart/ssm2env/releases/download/v1.1.1/ssm2env_1.1.1_linux_arm64.tar.gz"
+      sha256 "1dcf6b27232d367b97e826acbae46dae88daa13a5f7d3bd7a17eee5091577153"
 
       def install
         bin.install "ssm2env"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/shopsmart/ssm2env/releases/download/v1.1.1-rc.8/ssm2env_1.1.1-rc.8_linux_amd64.tar.gz"
-      sha256 "ced3abd8cd8a438c229614508bc5c2761913141dbc52db4a1ac4b975cd494007"
+      url "https://github.com/shopsmart/ssm2env/releases/download/v1.1.1/ssm2env_1.1.1_linux_amd64.tar.gz"
+      sha256 "4c3f09165b5a2e145d061ec7f6cd00a51658016f4ed03b9c71615e300f53ff68"
 
       def install
         bin.install "ssm2env"
