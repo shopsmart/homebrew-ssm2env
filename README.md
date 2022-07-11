@@ -5,7 +5,7 @@ Homebrew Formulae for [ssm2env](https://github.com/shopsmart/ssm2env).
 ## Tap this keg
 
 ```bash
-brew tap shopsmart/ssm2env https://github.com/shopsmart/homewbrew-ssm2env
+brew tap shopsmart/ssm2env https://github.com/shopsmart/homebrew-ssm2env
 ```
 
 ## Install
