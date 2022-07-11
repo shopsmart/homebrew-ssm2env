@@ -28,4 +28,8 @@ branches:
       required_status_checks: null
       enforce_admins: false
       required_linear_history: true
-      restrictions: null
+      restrictions:
+        users:
+          - bd-deployer
+        teams: []
+        apps: []
