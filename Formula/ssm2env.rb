@@ -5,20 +5,20 @@
 class Ssm2env < Formula
   desc ""
   homepage ""
-  version "1.1.1"
+  version "1.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shopsmart/ssm2env/releases/download/v1.1.1/ssm2env_1.1.1_darwin_amd64.tar.gz"
-      sha256 "9d25bc06ac5589f9c329be550abb66b19d4ca862ec37471eae7994add9830072"
+      url "https://github.com/shopsmart/ssm2env/releases/download/v1.2.1/ssm2env_1.2.1_darwin_amd64.tar.gz"
+      sha256 "c68931f7386457ee017dc1ffc0f5313e78292276e9a78692342f84607cb8680a"
 
       def install
         bin.install "ssm2env"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shopsmart/ssm2env/releases/download/v1.1.1/ssm2env_1.1.1_darwin_arm64.tar.gz"
-      sha256 "d21f76ff7e9649fd64bf1ccd9cd7bfa1b4c177f4a4766da48fd692feb02c771c"
+      url "https://github.com/shopsmart/ssm2env/releases/download/v1.2.1/ssm2env_1.2.1_darwin_arm64.tar.gz"
+      sha256 "aef002e79549bbc29615596c58be6f2000f6e08dafe37e9f29e142178ff86963"
 
       def install
         bin.install "ssm2env"
@@ -28,16 +28,16 @@ class Ssm2env < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shopsmart/ssm2env/releases/download/v1.1.1/ssm2env_1.1.1_linux_arm64.tar.gz"
-      sha256 "1dcf6b27232d367b97e826acbae46dae88daa13a5f7d3bd7a17eee5091577153"
+      url "https://github.com/shopsmart/ssm2env/releases/download/v1.2.1/ssm2env_1.2.1_linux_arm64.tar.gz"
+      sha256 "6bc9176e37d20ef0f45aa65abadb10cdb33a8930a8c565bba489a74a83a70721"
 
       def install
         bin.install "ssm2env"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/shopsmart/ssm2env/releases/download/v1.1.1/ssm2env_1.1.1_linux_amd64.tar.gz"
-      sha256 "4c3f09165b5a2e145d061ec7f6cd00a51658016f4ed03b9c71615e300f53ff68"
+      url "https://github.com/shopsmart/ssm2env/releases/download/v1.2.1/ssm2env_1.2.1_linux_amd64.tar.gz"
+      sha256 "481302d6757b6777a86d5acbb2d7d01f436eba420ad3b248b93d0f3f1709d288"
 
       def install
         bin.install "ssm2env"
