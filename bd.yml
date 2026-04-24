@@ -1,0 +1,5 @@
+application: homebrew-ssm2env
+
+metadata:
+  team:
+  type: homebrew-recipe
